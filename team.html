@@ -1,0 +1,295 @@
+<!DOCTYPE html>
+<html lang="ar" dir="rtl" data-theme="light">
+
+<head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <meta name="description"
+        content="Team Page – HCI4303 Advanced Interaction Course Website. Meet the developer: Omar Abdulrahman Al-Qathami, BSc in Human Computer Interaction, Umm Al Qura University. | صفحة الفريق – موقع مواصفات مقرر التفاعل المتقدم HCI4303." />
+    <title>الفريق | Team – HCI4303 Advanced Interaction</title>
+    <link rel="stylesheet" href="css/style.css" />
+    <style>
+        /* Team page uses Tajawal for the whole doc since it renders both AR+EN well */
+        body {
+            font-family: 'Tajawal', 'Inter', sans-serif;
+        }
+
+        /* ---- Page header bilingual ---- */
+        .team-hero-en {
+            font-family: 'Inter', sans-serif;
+            direction: ltr;
+        }
+
+        /* ---- Theme toggle ---- */
+        .theme-toggle {
+            display: flex;
+            align-items: center;
+            gap: 8px;
+            background: none;
+            border: 1.5px solid var(--border);
+            border-radius: 20px;
+            padding: 5px 14px;
+            color: var(--text-secondary);
+            font-size: .8rem;
+            font-weight: 600;
+            cursor: pointer;
+            transition: all .2s;
+        }
+
+        .theme-toggle:hover {
+            border-color: var(--accent);
+            color: var(--accent);
+        }
+
+        /* ---- Bilingual section titles ---- */
+        .bilingual-label {
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            gap: 12px;
+            flex-wrap: wrap;
+        }
+
+        .bilingual-label .ltr-text {
+            font-family: 'Inter', sans-serif;
+            direction: ltr;
+            font-size: .9rem;
+            color: var(--text-muted);
+            font-weight: 500;
+        }
+
+        /* ---- Divider ---- */
+        .divider {
+            height: 1px;
+            background: var(--border);
+            margin: 40px 0;
+        }
+
+        /* ---- Course link card ---- */
+        .course-links {
+            max-width: 900px;
+            margin: 0 auto 0;
+            padding: 0 24px 52px;
+        }
+
+        .course-links-inner {
+            background: var(--bg-card);
+            border: 1px solid var(--border);
+            border-radius: 16px;
+            padding: 28px;
+            box-shadow: var(--shadow-md);
+            text-align: center;
+        }
+
+        .course-links-inner h3 {
+            font-size: 1.1rem;
+            font-weight: 700;
+            color: var(--text-primary);
+            margin-bottom: 18px;
+        }
+
+        .page-links-grid {
+            display: flex;
+            flex-wrap: wrap;
+            gap: 10px;
+            justify-content: center;
+        }
+
+        .page-link-btn {
+            text-decoration: none;
+            padding: 10px 20px;
+            border-radius: 10px;
+            border: 1.5px solid var(--border);
+            color: var(--text-secondary);
+            font-size: .875rem;
+            font-weight: 600;
+            transition: all .2s;
+            background: var(--bg-primary);
+        }
+
+        .page-link-btn:hover {
+            background: var(--accent);
+            border-color: var(--accent);
+            color: white;
+            transform: translateY(-2px);
+            box-shadow: var(--shadow-sm);
+        }
+    </style>
+</head>
+
+<body>
+
+    <nav class="navbar" role="navigation" aria-label="التنقل الرئيسي | Main navigation">
+        <div class="navbar-container">
+
+            <a href="index-en-light.html" class="navbar-brand" id="brand-link">
+                <div class="brand-icon">HCI</div>
+                <div class="brand-text">
+                    التفاعل المتقدم · Advanced Interaction
+                    <span class="brand-sub">HCI4303 · UQU</span>
+                </div>
+            </a>
+
+            <div style="flex:1"></div>
+
+            <div class="navbar-pages">
+                <a href="index-en-light.html" class="pill">EN · Light</a>
+                <a href="index-en-dark.html" class="pill">EN · Dark</a>
+                <a href="index-ar-light.html" class="pill">AR · فاتح</a>
+                <a href="index-ar-dark.html" class="pill">AR · داكن</a>
+                <a href="team.html" class="pill team" aria-current="page"> Team</a>
+            </div>
+
+            <button class="hamburger" id="hamburger" aria-label="Toggle menu" aria-expanded="false"></button>
+        </div>
+    </nav>
+
+    <div class="mobile-drawer" id="mobile-drawer">
+        <ul>
+            <li><a href="index-en-light.html">EN Light</a></li>
+            <li><a href="index-en-dark.html">EN Dark</a></li>
+            <li><a href="index-ar-light.html">AR Light · فاتح</a></li>
+            <li><a href="index-ar-dark.html">AR Dark · داكن</a></li>
+            <li><a href="team.html"> Team / الفريق</a></li>
+        </ul>
+    </div>
+
+    <header class="team-hero" id="top">
+        <div class="team-hero-inner">
+            
+            <div class="hero-badge" style="margin:0 auto 20px; display:inline-flex;"> صفحة الفريق</div>
+            <h1 style="font-size:clamp(1.8rem,4vw,3rem); font-weight:800; color:white; margin-bottom:6px;">
+                فريق تطوير الموقع
+            </h1>
+            
+            <div class="team-hero-en" style="margin-top:6px; margin-bottom:16px;">
+                <p style="color:rgba(255,255,255,.75); font-size:1rem; font-weight:500;">
+                    Website Development Team
+                </p>
+            </div>
+            <p style="color:rgba(255,255,255,.65); font-size:.9rem;">
+                مقرر التفاعل المتقدم · HCI4303 &nbsp;|&nbsp; Advanced Interaction Course
+            </p>
+            <p style="color:rgba(255,255,255,.5); font-size:.82rem; margin-top:6px;">
+                جامعة أم القرى · كلية الحاسبات · قسم هندسة البرمجيات
+            </p>
+        </div>
+    </header>
+
+    <div class="team-grid" id="team">
+
+        <article class="member-card" id="member-omar">
+            <div class="member-photo-wrap">
+                
+                <div class="member-photo-placeholder" aria-label="صورة عمر عبدالرحمن القثامي"></div>
+                <div class="member-role-ribbon">Group Leader · قائد الفريق</div>
+            </div>
+
+            <div class="member-info">
+                
+                <p class="member-name-ar">عمر عبدالرحمن القثامي</p>
+                
+                <p class="member-name-en" style="font-family:'Inter',sans-serif; direction:ltr;">
+                    Omar Abdulrahman Al-Qathami
+                </p>
+
+                <div class="divider" style="margin:14px 0;"></div>
+
+                <div class="member-details">
+                    
+                    <div class="member-detail">
+                        
+                        <a href="mailto:s445005973@uqu.edu.st" style="font-family:'Inter',sans-serif; direction:ltr;">
+                            s445005973@uqu.edu.st
+                        </a>
+                    </div>
+
+                    <div class="member-detail">
+                        
+                        <div>
+                            <span style="color:var(--text-muted); font-size:.8rem; display:block; margin-bottom:4px;">
+                                الرقم الجامعي · Student ID
+                            </span>
+                            <span class="id-badge" style="font-family:'Inter',sans-serif;">445005973</span>
+                        </div>
+                    </div>
+
+                    <div class="member-detail">
+                        
+                        <div style="text-align:center;">
+                            <span style="display:block; font-size:.85rem; color:var(--text-secondary);">
+                                بكالوريوس تفاعل الإنسان والحاسب
+                            </span>
+                            <span
+                                style="display:block; font-size:.8rem; color:var(--text-muted); font-family:'Inter',sans-serif; direction:ltr; margin-top:2px;">
+                                BSc in Human Computer Interaction
+                            </span>
+                        </div>
+                    </div>
+
+                    <div class="member-detail">
+                        
+                        <div style="text-align:center;">
+                            <span style="display:block; font-size:.85rem; color:var(--text-secondary);">
+                                قسم هندسة البرمجيات · كلية الحاسبات
+                            </span>
+                            <span
+                                style="display:block; font-size:.8rem; color:var(--text-muted); font-family:'Inter',sans-serif; direction:ltr; margin-top:2px;">
+                                Software Engineering · College of Computing
+                            </span>
+                        </div>
+                    </div>
+
+                    <div class="member-detail">
+                        
+                        <div style="text-align:center;">
+                            <span style="display:block; font-size:.85rem; color:var(--text-secondary);">
+                                جامعة أم القرى
+                            </span>
+                            <span
+                                style="display:block; font-size:.8rem; color:var(--text-muted); font-family:'Inter',sans-serif; direction:ltr; margin-top:2px;">
+                                Umm Al Qura University
+                            </span>
+                        </div>
+                    </div>
+
+                </div>
+            </div>
+        </article>
+
+    </div>
+
+    <div class="course-links">
+        <div class="course-links-inner">
+            <h3>
+                صفحات المقرر · Course Pages
+            </h3>
+            <div class="page-links-grid">
+                <a href="index-en-light.html" class="page-link-btn"> English – Light</a>
+                <a href="index-en-dark.html" class="page-link-btn"> English – Dark</a>
+                <a href="index-ar-light.html" class="page-link-btn"> العربية – فاتح</a>
+                <a href="index-ar-dark.html" class="page-link-btn"> العربية – داكن</a>
+            </div>
+        </div>
+    </div>
+
+    <footer class="footer">
+        <div class="footer-inner">
+            <div>
+                <p class="footer-brand">HCI4303 – التفاعل المتقدم · Advanced Interaction</p>
+                <p class="footer-copy">قسم هندسة البرمجيات · كلية الحاسبات · جامعة أم القرى · Umm Al Qura University</p>
+            </div>
+            <div class="footer-links">
+                <a href="index-en-light.html">EN · Light</a>
+                <a href="index-en-dark.html">EN · Dark</a>
+                <a href="index-ar-light.html">AR · فاتح</a>
+                <a href="index-ar-dark.html">AR · داكن</a>
+                <a href="team.html">Team</a>
+            </div>
+        </div>
+    </footer>
+
+    <script src="js/main.js"></script>
+</body>
+
+</html>
